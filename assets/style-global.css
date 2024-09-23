@@ -6,7 +6,12 @@
 :root {
     --color-black-1: #20201f;
     --color-white-1: #ffffff;
+    --color-white-2: rgb(255, 255, 255, 60%);
     --color-gold-1: #887b3c;
+    --color-gold-2: rgb(70, 66, 43, 0.5);
+    --color-green-1: rgb(44, 71, 61, 0.5);
+    --color-red-1: rgb(72, 54, 52, 0.5);
+    --color-orange-1: rgb(71, 57, 44, 0.5);
 }
 
 * {

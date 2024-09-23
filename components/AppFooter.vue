@@ -6,6 +6,6 @@
 
 <style>
 footer{
-
+height: 30rem;
 }
 </style>
