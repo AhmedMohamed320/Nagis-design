@@ -334,7 +334,7 @@
             <div class="circle num7"></div>
             <div>
                 <p class="flex items-center justify-center -ml-96 text-4xl font-bold">
-                    <span class="text-1 -ml-10">Ready</span>
+                    <span class="text-1 -ml-16">Ready</span>
                     <span class="text-2 ml-10">to</span>
                     <span class="relative inline-block text-9xl flex items-center ml-10">
                         <transition name="fade" mode="out-in">
@@ -529,7 +529,7 @@ onBeforeUnmount(() => {
     right: -30rem;
     width: 70rem;
     height: 70rem;
-    background-color: #69b7ff18;
+    background-color: var(--color-blue-1);
 }
 
 .our-service {

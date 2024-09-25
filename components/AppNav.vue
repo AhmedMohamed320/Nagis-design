@@ -1,29 +1,43 @@
 <template>
     <nav>
         <div class="logo">
-            logo
+            <img class="w-36" src="/nagis-design-logo.png" alt="nagis-design-logo">
         </div>
         <ul>
             <li>
-                home
+                <NuxtLink to="/">
+                    home
+                </NuxtLink>
             </li>
             <li>
-                biography
+                <NuxtLink to="/biography">
+                    biography
+                </NuxtLink>
             </li>
             <li>
-                services
+                <NuxtLink to="">
+                    services
+                </NuxtLink>
             </li>
             <li>
-                projects
+                <NuxtLink to="/">
+                    projects
+                </NuxtLink>
             </li>
             <li>
-                community
+                <NuxtLink to="/">
+                    community
+                </NuxtLink>
             </li>
             <li>
-                about
+                <NuxtLink to="/">
+                    about
+                </NuxtLink>
             </li>
             <li>
-                branding
+                <NuxtLink to="/">
+                    branding
+                </NuxtLink>
             </li>
         </ul>
         <div class="menu">
@@ -44,12 +58,12 @@ nav ul,
 }
 
 nav {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     padding: 2rem 0;
 }
 
 nav ul {
-    gap: 1.75rem;
+    gap:2rem;
     list-style: none;
     text-transform: capitalize;
 }
@@ -62,7 +76,7 @@ nav ul {
     height: 3rem;
 }
 
-.menu span{
+.menu span {
     font-size: 1.5rem;
     cursor: pointer;
 }

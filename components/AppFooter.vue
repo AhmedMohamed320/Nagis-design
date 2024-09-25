@@ -33,33 +33,33 @@
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
-                        <p>
+                        <NuxtLink to="/">
                             Home
-                        </p>
+                        </NuxtLink>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
-                        <p>
+                        <NuxtLink to="/biography">
                             Biography
-                        </p>
+                        </NuxtLink>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
-                        <p>
+                        <NuxtLink to="/">
                             Services
-                        </p>
+                        </NuxtLink>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
-                        <p>
+                        <NuxtLink to="/">
                             Projects
-                        </p>
+                        </NuxtLink>
                     </li>
                 </ul>
             </li>
@@ -111,10 +111,10 @@
                     <li>
                         <span class="material-symbols-outlined">
                             phone_in_talk
-                            </span>
-                            <p>
-                                91+585-656-658
-                            </p>
+                        </span>
+                        <p>
+                            91+585-656-658
+                        </p>
                     </li>
                 </ul>
             </li>
@@ -126,26 +126,26 @@
 </template>
 
 <style scoped>
-footer>ul{
+footer>ul {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 7rem;
     padding: 5rem 0;
     font-size: 1.5rem;
 }
 
-footer>ul>li{
+footer>ul>li {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-footer>ul>li p.head{
+footer>ul>li p.head {
     position: relative;
     padding-bottom: 1rem;
 }
 
-footer>ul>li p.head::after{
+footer>ul>li p.head::after {
     content: "";
     position: absolute;
     width: 3rem;
@@ -155,32 +155,32 @@ footer>ul>li p.head::after{
     left: 0;
 }
 
-footer>ul>li ul li{
+footer>ul>li ul li {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-footer>ul>li ul li span{
+footer>ul>li ul li span {
     color: var(--color-gold-1);
     font-size: 2.5rem !important;
     font-weight: 700 !important;
 }
 
-footer>ul>li:nth-of-type(1) ul{
+footer>ul>li:nth-of-type(1) ul {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-footer>ul>li:nth-of-type(1)>p:nth-of-type(1){
+footer>ul>li:nth-of-type(1)>p:nth-of-type(1) {
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-gold-1);
 }
 
-footer>ul>li:nth-of-type(1) ul li{
+footer>ul>li:nth-of-type(1) ul li {
     background-color: var(--color-white-1);
     width: 3rem;
     height: 3rem;

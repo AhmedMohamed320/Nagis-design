@@ -21,5 +21,6 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    plugins: [{ src: "/plugins/keen-slider.js", mode: "client" }],
     devtools: { enabled: true },
 });
