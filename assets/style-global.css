@@ -30,6 +30,7 @@ body {
     color: var(--color-white-1);
     font-family: "Montserrat", system-ui;
     overflow-x: hidden;
+    position: relative;
 }
 
 a {
