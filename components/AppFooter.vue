@@ -174,6 +174,10 @@ footer>ul>li:nth-of-type(1) ul {
     gap: 2rem;
 }
 
+footer>ul>li:nth-of-type(1) ul li img {
+    width: 2.2rem;
+}
+
 footer>ul>li:nth-of-type(1)>p:nth-of-type(1) {
     font-size: 2.5rem;
     font-weight: 600;
@@ -189,5 +193,18 @@ footer>ul>li:nth-of-type(1) ul li {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media (max-width: 767px){
+    footer ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 639px){
+    footer ul{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 }
 </style>
