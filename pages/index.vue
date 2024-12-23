@@ -181,7 +181,7 @@
                 <p class="text-7xl font-bold uppercase leading-tight">
                     Recent Works
                 </p>
-                <ul class="flex gap-2 text-xl">
+                <ul class="flex gap-2 text-base">
                     <li>
                         <p>Identity</p>
                     </li>
@@ -222,7 +222,7 @@
                         </p>
                         <p>January 27, 2024</p>
                     </div>
-                    <p>
+                    <p class="w-11/12">
                         Lorem ipsum dolor sit amet consectetur. Malesuada enim
                         aliquet sit etiam eu non.
                     </p>
@@ -244,7 +244,7 @@
                         </p>
                         <p>January 27, 2024</p>
                     </div>
-                    <p>
+                    <p class="w-11/12">
                         Lorem ipsum dolor sit amet consectetur. Malesuada enim
                         aliquet sit etiam eu non.
                     </p>
@@ -278,7 +278,7 @@
                     <p class="capitalize text-5xl font-semibold">
                         01 discovery
                     </p>
-                    <p class="text-2xl opacity-65 font-light">
+                    <p class="text-2xl opacity-65 font-light max-w-3xl">
                         We begin by discovering your brand’s core message,
                         audience, and goals to create a solid foundation.
                     </p>
@@ -288,7 +288,7 @@
                         <img src="/creation.png" alt="Creation" />
                     </div>
                     <p class="capitalize text-5xl font-semibold">02 Creation</p>
-                    <p class="text-2xl opacity-65 font-light">
+                    <p class="text-2xl opacity-65 font-light max-w-3xl">
                         In-depth market research helps us understand your
                         industry landscape and refine the strategy to
                         differentiate your brand.
@@ -299,7 +299,7 @@
                         <img src="/branding.png" alt="Branding" />
                     </div>
                     <p class="capitalize text-5xl font-semibold">03 Branding</p>
-                    <p class="text-2xl opacity-65 font-light">
+                    <p class="text-2xl opacity-65 font-light max-w-3xl">
                         With a clear strategy in place, we begin the creative
                         process by designing visual assets that reflect your
                         brand’s identity.
@@ -313,13 +313,11 @@
         <div class="relative flex gap-44 flex-col">
             <div class="circle num7"></div>
             <div>
-                <p
-                    class="flex items-center justify-center -ml-96 text-4xl font-bold"
-                >
+                <p class="flex items-center justify-center -ml-44 sm:-ml-96 font-bold">
                     <span class="text-1 -ml-16">Ready</span>
                     <span class="text-2 ml-10">to</span>
                     <span
-                        class="relative inline-block text-9xl flex items-center ml-10"
+                        class="text-3 relative inline-block text-9xl flex items-center ml-10"
                     >
                         <transition name="fade" mode="out-in">
                             <span :key="currentWord" class="word">
@@ -562,7 +560,7 @@ onBeforeUnmount(() => {
     border-radius: 0.75rem;
 }
 
-.our-service > div ul > li:nth-of-type(1) img{
+.our-service > div ul > li:nth-of-type(1) img {
     width: 60%;
 }
 
@@ -603,7 +601,7 @@ onBeforeUnmount(() => {
 .projects-view {
     display: flex;
     padding: 5rem 0 0;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .projects-view > div {
@@ -636,6 +634,7 @@ onBeforeUnmount(() => {
     display: grid;
     grid-template-columns: repeat(3, minmax(10rem, 32rem));
     justify-content: space-around;
+    gap: 2rem;
 }
 
 .process .icon {
@@ -686,18 +685,32 @@ button.start-now {
         gap: 1rem;
         justify-content: center;
         align-items: center;
+        padding: 5rem 0;
     }
     .text-1,
     .text-2,
     .text-3 {
-        font-size:6.75rem;
+        font-size: 6.75rem;
     }
     .statics {
         margin-top: 3rem;
     }
-    .service{
+    .service {
         display: flex;
-        flex-direction: column-reverse;        
+        flex-direction: column-reverse;
+    }
+    .recent-works {
+        grid-template-columns: 1fr;
+    }
+
+    .process {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .text-1,
+    .text-2,
+    .text-3 {
+        font-size: 7rem;
     }
 }
 
@@ -706,8 +719,18 @@ button.start-now {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    .our-service{
+    .our-service {
         grid-template-columns: 1fr;
+    }
+
+    .process {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .text-1,
+    .text-2,
+    .text-3 {
+        font-size: 4rem;
     }
 }
 </style>
