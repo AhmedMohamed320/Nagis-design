@@ -562,6 +562,10 @@ onBeforeUnmount(() => {
     border-radius: 0.75rem;
 }
 
+.our-service > div ul > li:nth-of-type(1) img{
+    width: 60%;
+}
+
 .our-service > div ul > li:nth-of-type(3) {
     background-color: #d9d9d91f;
     border-radius: 5rem;
@@ -572,7 +576,7 @@ onBeforeUnmount(() => {
 .learn-more-service {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
 }
 
 .recent-works {
@@ -671,7 +675,7 @@ button.start-now {
     background: linear-gradient(0, #4e461f, var(--color-gold-1));
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero section {
         grid-template-columns: 1fr;
     }
@@ -691,12 +695,19 @@ button.start-now {
     .statics {
         margin-top: 3rem;
     }
+    .service{
+        display: flex;
+        flex-direction: column-reverse;        
+    }
 }
 
 @media (max-width: 640px) {
     .statics > ul {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+    .our-service{
+        grid-template-columns: 1fr;
     }
 }
 </style>

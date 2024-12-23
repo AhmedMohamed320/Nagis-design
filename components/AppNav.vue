@@ -1,7 +1,7 @@
 <template>
     <nav class="flex">
         <div class="logo">
-            <img class="w-36" src="/nagis-design-logo.png" alt="nagis-design-logo">
+            <img class="w-40" src="/nagis-design-logo.png" alt="nagis-design-logo">
         </div>
         <ul class="hidden md:flex">
             <li>
@@ -119,7 +119,7 @@ nav ul {
 }
 
 .menu span {
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
