@@ -313,7 +313,7 @@
         <div class="relative flex gap-44 flex-col">
             <div class="circle num7"></div>
             <div>
-                <p class="flex items-center justify-center -ml-44 sm:-ml-96 font-bold">
+                <p class="flex items-center justify-center -ml-44 sm:-ml-96 font-bold animationText">
                     <span class="text-1 -ml-16">Ready</span>
                     <span class="text-2 ml-10">to</span>
                     <span
@@ -727,9 +727,9 @@ button.start-now {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-    .text-1,
-    .text-2,
-    .text-3 {
+    .animationText .text-1,
+    .animationText .text-2,
+    .animationText .text-3 {
         font-size: 4rem;
     }
 }

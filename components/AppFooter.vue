@@ -1,5 +1,5 @@
 <template>
-    <footer class="mt-44">
+    <footer class="mt-44 px-4">
         <ul>
             <li>
                 <p>

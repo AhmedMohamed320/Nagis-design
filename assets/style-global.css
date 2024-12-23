@@ -29,6 +29,7 @@ body {
     background-color: var(--color-black-1);
     color: var(--color-white-1);
     font-family: "Montserrat", system-ui;
+    overflow-x: hidden;
 }
 
 a {

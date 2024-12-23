@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex">
+    <nav class="flex px-4">
         <div class="logo">
             <img class="w-40" src="/nagis-design-logo.png" alt="nagis-design-logo">
         </div>
